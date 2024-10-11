@@ -10,7 +10,7 @@ bool dominates(const NumericVector& a, const NumericVector& b) {
 
 struct NumericVectorComparator {
   bool operator() (const NumericVector& a,  
-                const NumericVector& b) { 
+                const NumericVector& b) const { 
     return (a[0] < b[0]);
   }
 };
